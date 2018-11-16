@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:drawable="@drawable/food_type_radio_button_selected"/>
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="@color/tabBackColor"/>
+        </shape>
+    </item>
+</selector>

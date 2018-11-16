@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.source.code.fragments.fragment_ordered"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/ordered_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:id="@+id/rl_food_submitted_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/ordered_total_tvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="总计"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/tv_price_frag_ordered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ordered_total_tvLabel"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="0.00元"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/btn_ordered_submit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_order"
+                android:text="提交订单"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_frag_ordered_quant"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/rl_food_submitted_bottom"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/circle_badge"
+            android:text="5"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

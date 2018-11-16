@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_rtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_button" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bili_logo"/>
+    <EditText
+        android:id="@+id/et_login_lg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/ic_perm_identity_white_48dp"
+        android:drawableTint="@color/colorAccent"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Account ID"/>
+
+    <EditText
+        android:id="@+id/et_login_psw"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/ic_lock_open_white_24dp"
+        android:drawableTint="@color/colorAccent"
+        android:hint="Password"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/loginbutton"
+            android:text="登陆"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbutton"
+            android:text="注册"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/prgBar_login"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"/>
+</LinearLayout>

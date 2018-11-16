@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentDark">#ce215c</color>
+    <color name="tabBackColor">#E8E8E8</color>
+    <color name="tabSelectColor">#ffffff</color>
+    <color name="colorPrimaryLighter">#fa5599f2</color>
+    <color name="colorPrimaryLighterDarker">#4379bf</color>
+    <color name="colorSubmittedYellow">#ffc559</color>
+    <color name="colorSubmittedYellowDark">#cc9e47</color>
+</resources>

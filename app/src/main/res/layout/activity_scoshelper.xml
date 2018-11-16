@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SCOSHelper">
+    <ImageView
+        android:id="@+id/help_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/long_pic_bili"
+        android:scaleType="centerCrop"/>
+    <GridView
+        android:id="@+id/help_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help_iv"
+        android:layout_marginTop="50dp"
+        android:columnWidth="80dp"
+        android:numColumns="2"></GridView>
+</RelativeLayout>

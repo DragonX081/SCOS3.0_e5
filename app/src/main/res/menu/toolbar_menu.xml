@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item_orderedFood" android:title="已点菜品" app:showAsAction="never"/>
+    <item android:id="@+id/item_command" android:title="查看订单" app:showAsAction="never"/>
+    <item android:id="@+id/item_st_service" android:title="启动实时更新" app:showAsAction="never"/>
+    <item android:id="@+id/item_stop_service" android:title="停止实时更新" app:showAsAction="never" android:visible="false"/>
+    <item android:id="@+id/item_service" android:title="呼叫服务"
+        android:icon="@drawable/ic_notifications_white_24dp"
+        app:showAsAction="always"/>
+</menu>
